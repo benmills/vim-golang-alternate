@@ -1,0 +1,7 @@
+# vim-golang-alternate
+
+Overrides vim's :A command to toggle between go implementation code and test code.
+
+## usage
+
+`:A` will open the current file's tests or the current test's implementation based on what is currently opened.
