@@ -4,4 +4,6 @@ Overrides vim's :A command to toggle between go implementation code and test cod
 
 ## usage
 
-`:A` will open the current file's tests or the current test's implementation based on what is currently opened.
+* `:A` will open the current file's tests or the current test's implementation based on what is currently opened.
+* `:AS` will act the same as `:A` but will move the current file to a new buffer in a split.
+* `:AV` will act the same as `:AS` but with a vertical split.
