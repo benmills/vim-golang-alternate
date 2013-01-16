@@ -7,3 +7,9 @@ Overrides vim's :A command to toggle between go implementation code and test cod
 * `:A` will open the current file's tests or the current test's implementation based on what is currently opened.
 * `:AS` will act the same as `:A` but will move the current file to a new buffer in a split.
 * `:AV` will act the same as `:AS` but with a vertical split.
+
+## installation
+
+With **[vim-bundle](https://github.com/benmills/vim-bundle)**: `vim-bundle install benmills/vim-golang-alternate`
+
+Otherwise download the latest [tarball](https://github.com/benmills/vim-golang-alternate/tarball/master), extract it and move `plugin/vim-golang-alternate.vim` inside `~/.vim/plugin` and `ftplugin/go.vim` inside `~/.vim/ftplugin`. If you're using [pathogen](https://github.com/tpope/vim-pathogen), then move the entire folder extracted from the tarball into `~/.vim/bundle`.
