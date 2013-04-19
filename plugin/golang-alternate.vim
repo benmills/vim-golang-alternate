@@ -2,10 +2,10 @@ function! GolangGetAlternateFilename(filepath)
   let fileToOpen = ""
 
   if empty(matchstr(a:filepath, "_test"))
-    let currentFileRoot = split(a:filepath, ".go")[0]
+    let currentFileRoot = split(a:filepath, ".go$")[0]
     let fileToOpen = currentFileRoot . "_test.go"
   else
-    let currentFileRoot = split(a:filepath, "_test.go")[0]
+    let currentFileRoot = split(a:filepath, "_test.go$")[0]
     let fileToOpen = currentFileRoot . ".go"
   endif
 
